@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "keys-tutorial",
-    "description": "This project is really great.",
+    "description": "A project that follows a tutorial for building a guitar transposer app in React Native Redux using Expo.",
     "slug": "keys-tutorial",
     "privacy": "public",
     "sdkVersion": "28.0.0",
@@ -10,7 +10,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icons/loading-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
