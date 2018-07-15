@@ -3,12 +3,12 @@ import { View, Platform, Image, Dimensions } from 'react-native';
 import { Divider } from 'react-native-elements';
 import Expo from 'expo';
 
-
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 import KeysButtons from '../components/KeysButtons';
 import CapoButtons from '../components/CapoButtons';
 import CapoKey from '../components/CapoKey';
+import ViewChordsButton from '../components/ViewChordsButton';
 import icon from '../assets/icons/pure-icon.png';
 import { STATUS_BAR_HEIGHT } from '../constants';
 
@@ -48,7 +48,7 @@ class MainScreen extends Component {
   }
 
   render() {
-    const { containerStyle, dividerStyle } = styles;
+    const { containerStyle, dividerStyle, buttonContainerStyle } = styles;
     return (
       <View style={{ flex: 1, backgroundColor: '#ddd' }}>
         <View style={containerStyle}>
@@ -58,6 +58,8 @@ class MainScreen extends Component {
           <Divider style={dividerStyle} />
           <CapoKey />
         </View>
+
+        <ViewChordsButton style={buttonContainerStyle} />
       </View>
     );
   }
@@ -78,6 +80,12 @@ const styles = {
   dividerStyle: {
     width: SCREEN_WIDTH * 0.9,
     backgroundColor: '#2196F3'
+  },
+  buttonContainerStyle: {
+    width: SCREEN_WIDTH,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 10
   }
 };
 
