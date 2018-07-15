@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { View, Platform, Image } from 'react-native';
+import { View, Platform, Image, Dimensions } from 'react-native';
 import { Divider } from 'react-native-elements';
 import Expo from 'expo';
 
+
+const SCREEN_WIDTH = Dimensions.get('window').width;
+
 import KeysButtons from '../components/KeysButtons';
 import CapoButtons from '../components/CapoButtons';
+import CapoKey from '../components/CapoKey';
 import icon from '../assets/icons/pure-icon.png';
-import { STATUS_BAR_HEIGHT, SCREEN_WIDTH } from '../constants';
+import { STATUS_BAR_HEIGHT } from '../constants';
 
 const cacheImages = images =>
   images.map(image => {
@@ -52,6 +56,7 @@ class MainScreen extends Component {
           <Divider style={dividerStyle} />
           <CapoButtons />
           <Divider style={dividerStyle} />
+          <CapoKey />
         </View>
       </View>
     );
