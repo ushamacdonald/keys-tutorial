@@ -7,7 +7,6 @@ import { openChordsModal } from '../actions';
 
 class ViewChordsButton extends Component {
   render() {
-    // const { selectedValues: { capoKeyIndex }, keys } = this.props;
 
     return (
       <View style={this.props.style}>
