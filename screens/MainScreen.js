@@ -9,6 +9,7 @@ import KeysButtons from '../components/KeysButtons';
 import CapoButtons from '../components/CapoButtons';
 import CapoKey from '../components/CapoKey';
 import ViewChordsButton from '../components/ViewChordsButton';
+import ChordsModal from '../modals/ChordsModal';
 import icon from '../assets/icons/pure-icon.png';
 import { STATUS_BAR_HEIGHT } from '../constants';
 
@@ -51,6 +52,8 @@ class MainScreen extends Component {
     const { containerStyle, dividerStyle, buttonContainerStyle } = styles;
     return (
       <View style={{ flex: 1, backgroundColor: '#ddd' }}>
+        <ChordsModal />
+
         <View style={containerStyle}>
           <KeysButtons />
           <Divider style={dividerStyle} />
