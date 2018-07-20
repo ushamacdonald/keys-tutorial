@@ -3,7 +3,7 @@ import { View, Platform, Image, Dimensions } from 'react-native';
 import { Divider } from 'react-native-elements';
 import Expo from 'expo';
 
-const SCREEN_WIDTH = Dimensions.get('window').width;
+import { STATUS_BAR_HEIGHT, SCREEN_WIDTH } from '../constants';
 
 import KeysButtons from '../components/KeysButtons';
 import CapoButtons from '../components/CapoButtons';
@@ -11,7 +11,6 @@ import CapoKey from '../components/CapoKey';
 import ViewChordsButton from '../components/ViewChordsButton';
 import ChordsModal from '../modals/ChordsModal';
 import icon from '../assets/icons/pure-icon.png';
-import { STATUS_BAR_HEIGHT } from '../constants';
 
 const cacheImages = images =>
   images.map(image => {
