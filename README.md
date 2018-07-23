@@ -1,3 +1,3 @@
 # A magic guitar transposer app
 
-*Readme coming soon...*
+Go [here](https://expo.io/@ushamacdonald/keys-tutorial) to open the project with the Expo app.
